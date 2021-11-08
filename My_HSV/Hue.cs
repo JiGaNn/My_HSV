@@ -34,5 +34,49 @@ namespace My_HSV
             }
             return (Convert.ToString(value) + typeOutput);
         }
+        public static Hue operator +(Hue instance, double number)
+        {
+            // расчитываем новoe значение
+            var newValue = instance.value + number;
+            // создаем новый экземпляр класса, с новый значением и типом как у меры, к которой число добавляем
+            var hue = new Hue(newValue, instance.type);
+            // возвращаем результат
+            return hue;
+        }
+        public static Hue operator +(double number, Hue instance)
+        {
+            return instance + number;
+        }
+        public static Hue operator -(Hue instance, double number)
+        {
+            // расчитываем новoe значение
+            var newValue = instance.value - number;
+            // создаем новый экземпляр класса, с новый значением и типом как у меры, к которой число добавляем
+            var hue = new Hue(newValue, instance.type);
+            // возвращаем результат
+            return hue;
+        }
+        public static Hue operator -(double number, Hue instance)
+        {
+            return instance - number;
+        }
+
+        public Hue To(HueType newType)
+        {
+            var newValue = this.value;
+            if(this.type == HueType.prcnt)
+            {
+                switch(newType)
+                {
+                    case HueType.dgr:
+                        newValue = this.value * 3.6;
+                        break;
+                    case HueType.thng:
+                        newValue = this.value / 100;
+                        break;
+                }
+            }
+            return new Hue(newValue, newType);
+        }
     }
 }
