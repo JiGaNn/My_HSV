@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My_HSV", "My_HSV\My_HSV.csproj", "{6922FED9-18EC-462E-A63E-C4BC03EC68CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "My_HSVTests", "My_HSVTests\My_HSVTests.csproj", "{7D64EB37-54A0-4A36-B6C4-575769C14EC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6922FED9-18EC-462E-A63E-C4BC03EC68CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6922FED9-18EC-462E-A63E-C4BC03EC68CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6922FED9-18EC-462E-A63E-C4BC03EC68CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6922FED9-18EC-462E-A63E-C4BC03EC68CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D64EB37-54A0-4A36-B6C4-575769C14EC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D64EB37-54A0-4A36-B6C4-575769C14EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D64EB37-54A0-4A36-B6C4-575769C14EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D64EB37-54A0-4A36-B6C4-575769C14EC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E246785B-3980-4F14-83A0-D31A4C317F92}
+	EndGlobalSection
+EndGlobal
