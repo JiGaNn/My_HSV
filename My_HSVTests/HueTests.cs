@@ -44,5 +44,21 @@ namespace My_HSV.Tests
             Assert.AreEqual("216°", hue.To(HueType.dgr).Output());
             Assert.AreEqual("0,6", hue.To(HueType.thng).Output());
         }
+        [TestMethod()]
+        public void AnyToPercentTest()
+        {
+            Hue hue = new Hue(216, HueType.dgr);
+            Assert.AreEqual("60%", hue.To(HueType.prcnt).Output());
+            hue = new Hue(0.6, HueType.thng);
+            Assert.AreEqual("60%", hue.To(HueType.prcnt).Output());
+        }
+        [TestMethod()]
+        public void AnyToAnyTest()
+        {
+            Hue hue = new Hue(216, HueType.dgr);
+            Assert.AreEqual("0,6", hue.To(HueType.thng).Output());
+            hue = new Hue(0.6, HueType.thng);
+            Assert.AreEqual("216°", hue.To(HueType.dgr).Output());
+        }
     }
 }

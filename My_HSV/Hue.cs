@@ -75,6 +75,21 @@ namespace My_HSV
                         newValue = this.value / 100;
                         break;
                 }
+            }else if(newType == HueType.prcnt)
+            {
+                switch(this.type)
+                {
+                    case HueType.dgr:
+                        newValue = this.value / 3.6;
+                        break;
+                    case HueType.thng:
+                        newValue = this.value * 100;
+                        break;
+                }
+            }
+            else
+            {
+                newValue = this.To(HueType.prcnt).To(newType).value;
             }
             return new Hue(newValue, newType);
         }
